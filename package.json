@@ -1,0 +1,17 @@
+{
+  "name": "auto-backup-mysql",
+  "version": "1.0.0",
+  "description": "Auto backup mysql to drive",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "1412dev",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "date-and-time": "^2.4.2",
+    "googleapis": "^111.0.0",
+    "mysqldump": "^3.2.0"
+  }
+}
