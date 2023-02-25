@@ -1,4 +1,3 @@
-# auto-backup-mysql-with-nodejs
 # Auto backup database mysql to GGdrive
 
 This tutorial explains how you can connect to `Google Drive` or any other `Google API` from a service account without user authentication.
