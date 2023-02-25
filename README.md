@@ -23,7 +23,7 @@ In the `Cloud Console`, go to IAM and Admin > Service accounts page. Click the e
 Select `JSON` as the Key type and then click Create. This will download a JSON file that will contain your private key. Do not commit this file to the Github repository.
 ![](./img/download_json.png)
 
-##4. Share a Drive Folder
+## 4. Share a Drive Folder
 For this example, we are looking to upload files from a local folder to a specific folder in Google Drive.
 
 Go to your Google Drive and create a new folder. Right-click the folder, choose Share and add the email address of the service account you created in step 3 as an editor to this folder.
