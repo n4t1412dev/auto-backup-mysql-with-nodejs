@@ -7,20 +7,24 @@ This step by step guide will guide you on how to upload files to `Google Drive `
 ## Getting Started 
 # 1. Create a Google Cloud Project
 Go to `cloud.google.com` and create a new Google Cloud project. Give your project a name, change the project ID and click the `Create` button.
+
 ![](./img/create_project.png)
 ## 2. Enable Google APIs
 Choose `APIs & Services` from the left menu and click on `Enable APIs and Services` to enable the various Google APIs. If you planning to upload files to Google Drive then you will need to enable Drive API. If you wish to use the Google Cloud Storage API then you will need to enable Storage API.
+
 ![](./img/enable_api.png)
 ## 3. Create a Service Account
 In the `APIs & Services` section, click on `Credentials` and click on Create credentials to `create a service account`.
 ![](./img/create_account.png)
 ### 3a. Describe the Service Account
 Give your service account a name and a service account ID. This is like an email address and will be used to identify your service account in the future. Click `Done` to finish creating the service account.
+
 ![](./img/create_service_account.png)
 ### 3b. Create a Key File
 In the `Cloud Console`, go to IAM and Admin > Service accounts page. Click the email address of the service account that you want to create a key for. Click the `Keys` tab. Click the `Add key` drop-down menu, then select Create new key.
 
 Select `JSON` as the Key type and then click Create. This will download a JSON file that will contain your private key. Do not commit this file to the Github repository.
+
 ![](./img/download_json.png)
 
 ## 4. Share a Drive Folder
@@ -29,6 +33,7 @@ For this example, we are looking to upload files from a local folder to a specif
 Go to your Google Drive and create a new folder. Right-click the folder, choose Share and add the email address of the service account you created in step 3 as an editor to this folder.
 
 Thus your Node.js application will be able to access this folder and upload files to it. The application will not have access to any other resources on your Google Drive.
+
 ![](./images/share_folder.png)
 ## Usage
 1. Clone the repo:
